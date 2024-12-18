@@ -15,10 +15,11 @@ body{
 #display{
     width: 100%;
     padding: 20px;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: left;
     border: none;
     background-color: rgb(65, 74, 83);
+    color: white;
 }
 #keys{
     display: grid;
@@ -36,6 +37,7 @@ button{
     cursor: pointer;
     font-size: 3rem;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 button:hover{
     background-color:orange ;
@@ -45,4 +47,21 @@ button:active{
 }
 .operator-btn{
     background-color: orangered;
+}
+.operator-btn:hover{
+    background-color: darkred;
+}
+.operator-btn:active{
+    background-color: crimson;
+}
+
+@media (max-width: 768px) {
+    button{
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    #display{
+        font-size: 2rem;
+    }
 }
